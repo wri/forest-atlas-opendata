@@ -509,7 +509,7 @@ body {
 #title-bar-region .search-nav-item {
     cursor: pointer;
     position: absolute;
-    left: 285px;
+    left: 300px;
     min-width: 200px;
     color: #767676;
     font-size: 14px;
@@ -579,6 +579,55 @@ body {
 }
 #header {
     box-shadow: 0 0 0px #555;
+}
+
+#header .menuButtons{
+    color: #323232;
+    position: absolute;
+    font-weight: 500!important;
+    font-size: 14px!important;
+    font-family: 'Fira Sans', Helvetica, sans-serif;
+    height: 35px;
+    /*background-color: #F0AB00;*/
+    right: 0px;
+}
+
+#header .inner-header li {
+    display: inline;
+     text-transform: none;
+    margin-right: 10px;
+}
+.leftMenu{
+    right: 240px;
+    top: 21px;
+    position: absolute;
+    width: 95px;
+}
+.rightMenu{
+    right: 17px;
+    top: 21px;
+    position: absolute;
+    width: 128px;
+}
+
+#title-bar-inner{
+    margin-left: 25px;
+    margin-right: 15px;
+}
+
+.activeLanguage{
+    color:#ffffff;
+}
+
+#activities-button{
+    padding-right: 127px;
+}
+
+.whiteDivider{
+    border-left: 1px solid #ffffff;
+    position: absolute;
+    height: 60px;
+    right: 156px;
 }
 
 .btn-default {
