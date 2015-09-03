@@ -116,7 +116,6 @@ body {
 }
 
 .home #slide-region #slide-me #page-content .interesting-section {
-    padding:70px 0;
     background:#f7f7f7;
     border-top:1px solid #E5E5DF;
     border-bottom:1px solid #E5E5DF;
@@ -129,7 +128,7 @@ body {
 }
 
 .home #slide-region #slide-me #page-content .interesting-section .inner .section-title {
-    padding:0 0 40px;
+    /*padding:0 0 40px;*/
     /*color:#97Bd3d;*/
     text-align:center;
     font-size:32px;
@@ -441,7 +440,10 @@ body {
     line-height: 1.714;
     border-radius: 4px;
     -moz-user-select: none;
+    margin-right: 251px;
 }
+
+#activities-button:focus {outline:0;}
 
 #activities-region .btn{
     border: 1px solid #333;
@@ -567,20 +569,28 @@ body {
     height: 100%;
     line-height: 70px;
     position: relative;
-    margin-right: 280px!important;
+    /*margin-right: 280px!important;*/
     vertical-align: middle;
     margin-top: -7px;
+    float: left;
 }
 
 #flagTitle {
-    position: absolute;
+    /*position: absolute;*/
     color: black;
-    top: 27px;
+    /*top: 27px;*/
     right: 10px;
     font-size: 14px;
     z-index: 500;
     width: 145px;
     padding-left: 20px;
+    font-weight: 400;
+}
+@media screen and (max-width: 1024px) {
+    #flagTitle {
+        font-size: 10px;
+    }
+
 }
 
 #header a {
@@ -616,13 +626,13 @@ body {
 }
 .leftMenu{
     right: 240px;
-    top: 21px;
+    top: 92px;
     position: absolute;
     width: 95px;
 }
 .rightMenu{
     right: 17px;
-    top: 21px;
+    top: 92px;
     position: absolute;
     width: 128px;
 }
@@ -637,7 +647,7 @@ body {
 }
 
 #activities-button{
-    padding-right: 127px;
+    padding-right: 0px;
 }
 
 .whiteDivider{
@@ -645,6 +655,7 @@ body {
     position: absolute;
     height: 60px;
     right: 156px;
+    top: 73px;
 }
 
 .btn-default {
@@ -719,5 +730,19 @@ body {
 #dataset-download-container .btn:hover {
     background: #000;
 }
+#nav-download{
+    border-color: transparent;
+}
+#nav-download:focus {outline:0;}
+
+.navbar-default {
+    background-color: #fff;
+     border-color: transparent !important;
+}
+
+#footer{
+    display: none;
+}
+
 
 
