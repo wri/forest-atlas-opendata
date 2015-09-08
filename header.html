@@ -23,6 +23,7 @@
     <a href="#contentStart" class="skip-nav">Skip to main content</a>
 </div>
 <header id="navbar" role="banner" class="navbar container navbar-default">
+
     <div class="container">
         <div class="region region-branding">
             <section id="block-idfg-components-regions" class="block block-idfg-components clearfix">
@@ -30,10 +31,17 @@
             </section>
         </div>
         <div class="navbar-header">
-            <div id="mainTitle">
+            <div class="googleTrans">
+                <div id="google_translate_element"></div><script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                }
+            </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </div>
+            <div id="mainTitle" class="col-sm-12">
                 <div class="row">
                     <div class="col-sm-8">
-                        <a style="color:#444;" href="http://cmr-data.forest-atlas.org/" title="Open Data Homepage">Forest Atlas of Cameroon - Open Data Portal</a>
+                        <a style="color:#444;" href="http://cmr-data.forest-atlas.org/" class="mainHeader hidden-xs" title="Open Data Homepage">Forest Atlas of Cameroon - Open Data Portal</a>
                     </div>
                     <div class="col-sm-4">
                         <div id="countryFlagContainer">
@@ -46,7 +54,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div>
+                        <div class="hidden-xs hidden-sm">
                             <a id="flagTitle" target="_blank" href="http://www.minfof.cm/"
                                style="width:280px!important;" data-bind="{text:flagTitle}">
                                 Ministère des Forêts et de la Faune
@@ -55,12 +63,19 @@
                     </div>
                 </div>
             </div>
-            <div class="menuButtons">
+            <div class="menuButtons hidden-xs hidden-sm">
                 <ul class="leftMenu">
                     <a href="http://cmr.forest-atlas.org/#l=en" target="_blank"><li class="">About</li></a>
                     <a href="http://cmr.atlas-forestier.org/map/#v=atlas&l=en&x=14.1339&y=8.8428&z=6" target="_blank"><li class="">Map</li></a>
                 </ul>
                 <div class="whiteDivider"></div>
+                <ul class="rightMenu">
+                    <a href="#"><li class="activeLanguage">English</li></a>
+                    <a href="#"><li class="">French</li></a>
+                </ul>
+            </div>
+
+            <div class="mobileLanguage">
                 <ul class="rightMenu">
                     <a href="#"><li class="activeLanguage">English</li></a>
                     <a href="#"><li class="">French</li></a>
@@ -81,19 +96,19 @@
 <!--/header-->
 <!--<div id="navfull" class="row">-->
     <!--<div class="container topnav">-->
-        <!--<div id="navContent" class="navbar-primary navbar-collapse collapse">-->
-            <!--&lt;!&ndash;<nav role="navigation">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="region region-navigation">&ndash;&gt;-->
-                    <!--<section id="" class="clearfix">-->
-                        <!--<ul>-->
-                            <!--<li>About</li>-->
-                            <!--<li>Map</li>-->
+        <div id="navContent" class="navbar-primary navbar-collapse collapse">
+            <!--<nav role="navigation">-->
+                <!--<div class="region region-navigation">-->
+                    <section style="padding-left: 25px;" class="visible-xs visible-sm clearfix">
+                        <ul>
+                            <a href="http://cmr.forest-atlas.org/#l=en" target="_blank"><li>About</li></a>
+                            <a href="http://cmr.atlas-forestier.org/map/#v=atlas&l=en&x=14.1339&y=8.8428&z=6" target="_blank"><li>Map</li></a>
                             <!--<li>My Activity</li>-->
-                        <!--</ul>-->
-                    <!--</section>-->
-                <!--</div>-->
-            <!--</nav>-->
-        <!--</div>-->
+                        </ul>
+                    </section>
+                </div>
+            </nav>
+        </div>
         <!-- /.navbar-collapse -->
     <!--</div>-->
 <!--</div>-->
