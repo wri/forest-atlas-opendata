@@ -591,12 +591,40 @@ body {
     float: left;
 }
 
+
+@media screen and (max-width: 991px) {
+    #countryFlagContainer {
+        text-align: right;
+        height: 100%;
+        line-height: 70px;
+        position: absolute;
+        /*margin-right: 280px!important;*/
+        vertical-align: middle;
+        margin-top: -7px;
+        left: -45px;
+    }
+}
+@media screen and (max-width: 767px) {
+    #countryFlagContainer {
+        text-align: right;
+        height: 100%;
+        line-height: 70px;
+        position: absolute;
+        /*margin-right: 280px!important;*/
+        vertical-align: middle;
+        margin-top: -7px;
+        left: -30px;
+
+    }
+
+}
+
 #flagTitle {
     /*position: absolute;*/
     color: black;
     /*top: 27px;*/
     right: 10px;
-    font-size: 14px;
+    font-size: 12px;
     z-index: 500;
     width: 145px;
     padding-left: 20px;
@@ -795,6 +823,7 @@ body {
     /*position: absolute;*/
     /*right: 25px;*/
     /*top: -12px;*/
+    display: none;
 }
 #google_translate_element .goog-te-gadget {
     /*font-family: inherit;*/
