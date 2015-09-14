@@ -1,3 +1,6 @@
+/*	--------------------------------
+	Style Sheet
+ 	--------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500);
 
 * {
@@ -11,6 +14,286 @@ body {
     margin: 0px;
     -webkit-font-smoothing:antialiased;
 }
+
+
+
+
+
+/*	--------------------------------
+	HEADER STYLE
+ 	--------------------------------*/
+
+#nav-download{
+    border-color: transparent;
+}
+#nav-download:focus {outline:0;}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent !important;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+#google_translate_element{
+    /*position: absolute;*/
+    /*right: 25px;*/
+    /*top: -12px;*/
+    display: none;
+}
+#google_translate_element .goog-te-gadget {
+    /*font-family: inherit;*/
+    text-align: right;
+}
+.goog-te-gadget {
+    font-family: arial;
+    font-size: 11px;
+    color: #666;
+    white-space: nowrap;
+}
+#google_translate_element .goog-te-gadget .goog-te-gadget-simple {
+    border: none;
+    background: none;
+}
+.goog-te-gadget-simple {
+    background-color: #fff;
+    border-left: 1px solid #d5d5d5;
+    border-top: 1px solid #9b9b9b;
+    border-bottom: 1px solid #e8e8e8;
+    border-right: 1px solid #d5d5d5;
+    font-size: 10pt;
+    display: inline-block;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    cursor: pointer;
+    zoom: 1;
+}
+
+.googleTrans{
+    position: absolute;
+    right: 25px;
+    top: -11px;
+}
+
+@media screen and (max-width: 992px) {
+    #google_translate_element .goog-te-gadget {
+        text-align: center !important;
+    }
+}
+
+#mainTitle {
+    display: block;
+    color: black;
+    text-align: left;
+    line-height: 58px;
+    vertical-align: middle;
+    position: absolute;
+    width: 100%;
+    height: 58px;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0px 12px;
+    /*background-color: rgb(255,255,255);*/
+}
+
+@media screen and (max-width: 992px) {
+    .mainHeader{
+        font-size: 18px;
+    }
+}
+
+
+#countryFlagContainer {
+    text-align: right;
+    height: 100%;
+    line-height: 70px;
+    position: relative;
+    /*margin-right: 280px!important;*/
+    vertical-align: middle;
+    margin-top: -7px;
+    float: left;
+}
+
+
+@media screen and (max-width: 991px) {
+    #countryFlagContainer {
+        text-align: right;
+        height: 100%;
+        line-height: 70px;
+        position: absolute;
+        /*margin-right: 280px!important;*/
+        vertical-align: middle;
+        margin-top: -7px;
+        left: -45px;
+    }
+}
+@media screen and (max-width: 767px) {
+    #countryFlagContainer {
+        text-align: right;
+        height: 100%;
+        line-height: 70px;
+        position: absolute;
+        /*margin-right: 280px!important;*/
+        vertical-align: middle;
+        margin-top: -7px;
+        left: -30px;
+
+    }
+
+}
+
+#flagTitle {
+    /*position: absolute;*/
+    color: black;
+    /*top: 27px;*/
+    right: 10px;
+    font-size: 12px;
+    z-index: 500;
+    width: 145px;
+    padding-left: 20px;
+    font-weight: 400;
+}
+@media screen and (max-width: 1024px) {
+    #flagTitle {
+        font-size: 10px;
+    }
+
+}
+
+#header a {
+    color: #000000;
+}
+#header {
+    box-shadow: 0 0 0px #555;
+}
+
+@media screen and (max-width: 992px) {
+    #header {
+        background-color: #F0AB00;
+    }
+}
+
+#header .menuButtons{
+    color: #323232;
+    position: absolute;
+    font-weight: 500!important;
+    font-size: 14px!important;
+    font-family: 'Fira Sans', Helvetica, sans-serif;
+    height: 35px;
+    /*background-color: #F0AB00;*/
+    right: 0px;
+    cursor: pointer;
+}
+#header .menuButtons a{
+    text-decoration: none;
+}
+
+#header .menuButtons a:focus, a:hover {
+    text-decoration: none;
+}
+
+#header .inner-header li {
+    display: inline;
+    text-transform: none;
+    margin-right: 10px;
+}
+.leftMenu{
+    right: 250px;
+    top: 92px;
+    position: absolute;
+    width: 95px;
+}
+.rightMenu{
+    right: 17px;
+    top: 92px;
+    position: absolute;
+    width: 128px;
+}
+@media screen and (max-width: 992px) {
+    .rightMenu{
+        right: 60px;
+        top: 16px;
+        position: absolute;
+        width: 128px;
+    }
+}
+
+#title-bar-inner{
+    margin-left: 25px;
+    margin-right: 15px;
+}
+
+.activeLanguage{
+    color:#ffffff;
+}
+
+#activities-button{
+    padding-right: 0px;
+}
+
+.whiteDivider{
+    border-left: 1px solid #ffffff;
+    position: absolute;
+    height: 60px;
+    right: 156px;
+    top: 73px;
+}
+
+.btn-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#activities-region .btn, #activities-umbrella-region .btn{
+    border:0px;
+}
+
+
+#activities-region .btn, #activities-umbrella-region .btn:hover {
+    background: transparent;
+}
+
+.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.btn-default.dropdown-toggle
+{
+    border:0px;
+
+}
+
+#activities-region #activities-growl, #activities-umbrella-region #activities-growl
+{
+    border:0px;
+}
+
+#search-results-region img {
+    float: left;
+    width: 149px;
+    height: 100px;
+    margin-right: 15px;
+    border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 992px) {
+    #search-results-extent-button-region{
+        display: none !important;
+    }
+}
+
+
+/*	--------------------------------
+	END - HEADER STYLE
+ 	--------------------------------*/
+
+/*	--------------------------------
+	BODY HOME STYLE
+ 	--------------------------------*/
+
 
 #home-link-region{
     width: 100%;
@@ -236,6 +519,7 @@ body {
     line-height:.6;
 }
 
+
 .layout {
     width: 100%;
     height: 100%;
@@ -455,7 +739,7 @@ body {
 #activities-button:focus {outline:0;}
 
 #activities-region .btn{
-    border: 1px solid #333;
+    /*border: 1px solid #333;*/
     color: #323232;
 }
 
@@ -558,202 +842,6 @@ body {
     vertical-align: middle;
 }
 
-#mainTitle {
-    display: block;
-    color: black;
-    text-align: left;
-    line-height: 58px;
-    vertical-align: middle;
-    position: absolute;
-    width: 100%;
-    height: 58px;
-    font-size: 26px;
-    font-weight: 600;
-    margin: 0px 12px;
-    /*background-color: rgb(255,255,255);*/
-}
-
-@media screen and (max-width: 992px) {
-    .mainHeader{
-        font-size: 18px;
-    }
-}
-
-
-#countryFlagContainer {
-    text-align: right;
-    height: 100%;
-    line-height: 70px;
-    position: relative;
-    /*margin-right: 280px!important;*/
-    vertical-align: middle;
-    margin-top: -7px;
-    float: left;
-}
-
-
-@media screen and (max-width: 991px) {
-    #countryFlagContainer {
-        text-align: right;
-        height: 100%;
-        line-height: 70px;
-        position: absolute;
-        /*margin-right: 280px!important;*/
-        vertical-align: middle;
-        margin-top: -7px;
-        left: -45px;
-    }
-}
-@media screen and (max-width: 767px) {
-    #countryFlagContainer {
-        text-align: right;
-        height: 100%;
-        line-height: 70px;
-        position: absolute;
-        /*margin-right: 280px!important;*/
-        vertical-align: middle;
-        margin-top: -7px;
-        left: -30px;
-
-    }
-
-}
-
-#flagTitle {
-    /*position: absolute;*/
-    color: black;
-    /*top: 27px;*/
-    right: 10px;
-    font-size: 12px;
-    z-index: 500;
-    width: 145px;
-    padding-left: 20px;
-    font-weight: 400;
-}
-@media screen and (max-width: 1024px) {
-    #flagTitle {
-        font-size: 10px;
-    }
-
-}
-
-#header a {
-    color: #000000;
-}
-#header {
-    box-shadow: 0 0 0px #555;
-}
-
-@media screen and (max-width: 992px) {
-    #header {
-        background-color: #F0AB00;
-    }
-}
-
-#header .menuButtons{
-    color: #323232;
-    position: absolute;
-    font-weight: 500!important;
-    font-size: 14px!important;
-    font-family: 'Fira Sans', Helvetica, sans-serif;
-    height: 35px;
-    /*background-color: #F0AB00;*/
-    right: 0px;
-    cursor: pointer;
-}
-#header .menuButtons a{
-    text-decoration: none;
-}
-
-#header .menuButtons a:focus, a:hover {
-    text-decoration: none;
-}
-
-#header .inner-header li {
-    display: inline;
-    text-transform: none;
-    margin-right: 10px;
-}
-.leftMenu{
-    right: 240px;
-    top: 92px;
-    position: absolute;
-    width: 95px;
-}
-.rightMenu{
-    right: 17px;
-    top: 92px;
-    position: absolute;
-    width: 128px;
-}
-@media screen and (max-width: 992px) {
-    .rightMenu{
-        right: 60px;
-        top: 16px;
-        position: absolute;
-        width: 128px;
-    }
-}
-
-#title-bar-inner{
-    margin-left: 25px;
-    margin-right: 15px;
-}
-
-.activeLanguage{
-    color:#ffffff;
-}
-
-#activities-button{
-    padding-right: 0px;
-}
-
-.whiteDivider{
-    border-left: 1px solid #ffffff;
-    position: absolute;
-    height: 60px;
-    right: 156px;
-    top: 73px;
-}
-
-.btn-default {
-    background-color: transparent;
-    border-color: transparent;
-}
-
-#activities-region .btn, #activities-umbrella-region .btn{
-    border:0px;
-}
-
-
-#activities-region .btn, #activities-umbrella-region .btn:hover {
-    background: transparent;
-}
-
-.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.btn-default.dropdown-toggle
-{
-    border:0px;
-
-}
-
-#activities-region #activities-growl, #activities-umbrella-region #activities-growl
-{
-    border:0px;
-}
-
-#search-results-region img {
-    float: left;
-    width: 149px;
-    height: 100px;
-    margin-right: 15px;
-    border: 1px solid #ccc;
-}
-
-@media screen and (max-width: 992px) {
-    #search-results-extent-button-region{
-        display: none !important;
-    }
-}
 
 
 
@@ -796,80 +884,21 @@ body {
 #dataset-download-container .btn:hover {
     background: #000;
 }
-#nav-download{
-    border-color: transparent;
-}
-#nav-download:focus {outline:0;}
-
-.navbar-default {
-    background-color: transparent;
-    border-color: transparent !important;
-}
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: transparent;
-}
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #ffffff;
-}
 
 #footer{
     display: none;
 }
 
-#google_translate_element{
-    /*position: absolute;*/
-    /*right: 25px;*/
-    /*top: -12px;*/
-    display: none;
-}
-#google_translate_element .goog-te-gadget {
-    /*font-family: inherit;*/
-    text-align: right;
-}
-.goog-te-gadget {
-    font-family: arial;
-    font-size: 11px;
-    color: #666;
-    white-space: nowrap;
-}
-#google_translate_element .goog-te-gadget .goog-te-gadget-simple {
-    border: none;
-    background: none;
-}
-.goog-te-gadget-simple {
-    background-color: #fff;
-    border-left: 1px solid #d5d5d5;
-    border-top: 1px solid #9b9b9b;
-    border-bottom: 1px solid #e8e8e8;
-    border-right: 1px solid #d5d5d5;
-    font-size: 10pt;
-    display: inline-block;
-    padding-top: 1px;
-    padding-bottom: 2px;
-    cursor: pointer;
-    zoom: 1;
-}
-
-.googleTrans{
-    position: absolute;
-    right: 25px;
-    top: -11px;
-}
-
-@media screen and (max-width: 992px) {
-    #google_translate_element .goog-te-gadget {
-        text-align: center !important;
-    }
-}
 
 @media screen and (max-width: 992px) {
     #title-bar-region{
         display: none;
     }
 }
+
+/*	--------------------------------
+	END - BODY STYLE
+ 	--------------------------------*/
 
 
 
