@@ -1,124 +1,184 @@
-<!-- APPS -->
 <section class="apps" id="applications">
-  <div class="link-tags">
-    <ul>
-        <li class="inactive-tag">
-            <span class="icon  icon-plus "></span>
-            <span class="tag-name"><a href="/datasets?keyword=Global Forest Watch&sort_by=updated_at">Global Forest Watch</a></span>
-        </li>
-        <li class="inactive-tag">
-            <span class="icon  icon-plus "></span>
-            <span class="tag-name"><a href="/datasets?keyword=Fires&sort_by=updated_at">Global Forest Watch Fires</a></span>
-        </li>
-        <li class="inactive-tag">
-            <span class="icon  icon-plus "></span>
-            <span class="tag-name"><a href="/datasets?keyword=Commodities&sort_by=updated_at">Global Forest Watch Commodities</a></span>
-        </li>
-    </ul>
-  </div>
+    <!--
+    ** FEATURE DATA SETS AND BROWSE ALL DATA SECTION
+    -->
+    <div class="main-apps">
+        <div class="inner">
+            <div class="row">
+                <div class="col col6">
+                    <!--URL TO QUERY DATA HERE-->
+                    <a href="/datasets?q=featured">
+                        <div class="icon">
+                            <!--SVG ICONS-->
+                            <svg>
+                                <use xlink:href="#shape-relevant"></use>
+                            </svg>
+                        </div>
+                        <!--SET TEXT HERE-->
+                        <h3>FEATURED DATA SETS</h3>
+                    </a>
+                </div>
+                <div class="col col6">
+                    <!--URL TO QUERY DATA HERE-->
+                    <a href="/datasets?sort_by=created_at">
+                        <div class="icon">
+                            <!--SVG ICONS-->
+                            <svg>
+                                <use xlink:href="#shape-recent"></use>
+                            </svg>
+                        </div>
+                        <!--SET TEXT HERE-->
+                        <h3>BROWSE ALL DATA</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    END - FEATURE DATA SETS AND BROWSE ALL DATA SECTION
+    -->
 
-  <!-- MAIN APPS -->
-  <div class="main-apps">
-  <div class="inner">
-  <div class="row">
-    <div class="col col6">
-          <a href="/datasets?q=featured">
-            <div class="icon">
-              <svg><use xlink:href="#shape-relevant"></use></svg>
+    <!--
+    ** EXPLORE DATA SETS BY CATEGORY SECTION - "FIND DATASETS BY CATEGORY"
+    -->
+    <div class="row-apps">
+        <!--SET TITLE TEXT HERE FOR SECTION-->
+        <h2>FIND DATASETS BY CATEGORY</h2>
+
+        <div class="row">
+            <div class="col col3">
+                <!--TITLE OF CATEGORY-->
+                <h3>Forest Management</h3>
+
+                <!--DESCRIPTION OF CATEGORY-->
+                <p class="description">These data indicate change within forests at different resolutions, frequencies,
+                    and geographic extents. The UMD/Google tree cover loss and gain data, near real-time forest alerts,
+                    and active fire data can be found here.</p>
+                <!--URL TO QUERY DATA HERE-->
+                <a class="btn dark medium" href="/datasets?q=forest_change">Explore</a>
             </div>
-            <h3>FEATURED DATA SETS</h3>
-          </a>
-    </div>
-    <div class="col col6">
-          <a href="/datasets?sort_by=created_at">
-            <div class="icon">
-              <svg><use xlink:href="#shape-recent"></use></svg>
+            <div class="col col3">
+                <!--TITLE OF CATEGORY-->
+                <h3>Conservation</h3>
+
+                <!--DESCRIPTION OF CATEGORY-->
+                <p class="description">These data represent types of forest cover at different resolutions and
+                    geographic extents. Forest types such as mangroves, Intact Forest Landscapes, primary forests, and
+                    carbon stocks can be found here.</p>
+                <!--URL TO QUERY DATA HERE-->
+                <a class="btn dark medium" href="/datasets?q=conservation">Explore</a>
             </div>
-            <h3>BROWSE ALL DATA</h3>
-          </a>
+            <div class="col col3">
+                <!--TITLE OF CATEGORY-->
+                <h3>Agro Industry</h3>
+
+                <!--DESCRIPTION OF CATEGORY-->
+                <p class="description">These data represent ways humans use forests, such as allocating forests for
+                    agricultural concessions or infrastructure development.</p>
+                <!--URL TO QUERY DATA HERE-->
+                <a class="btn dark medium" href="/datasets?q=agro_industry">Explore</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col3">
+                <!--TITLE OF CATEGORY-->
+                <h3>Oil & Gas</h3>
+
+                <!--DESCRIPTION OF CATEGORY-->
+                <p class="description">These data represent forest conservation and preservation efforts, as well as
+                    areas that are important to biodiversity and natural resources.</p>
+                <!--URL TO QUERY DATA HERE-->
+                <a class="btn dark medium" href="/datasets?q=oil_gas">Explore</a>
+            </div>
+            <div class="col col3">
+                <!--TITLE OF CATEGORY-->
+                <h3>Administrative units</h3>
+
+                <!--DESCRIPTION OF CATEGORY-->
+                <p class="description">These data represent areas over which indigenous peoples or local communities
+                    have rights over land and/or certain resources. Data such as forest management units and indigenous
+                    reserves can be found here.</p>
+                <!--URL TO QUERY DATA HERE-->
+                <a class="btn dark medium" href="/datasets?q=administrative_units">Explore</a>
+            </div>
+            <div class="col col3">
+                <!--TITLE OF CATEGORY-->
+                <h3>Infrastructure</h3>
+
+                <!--DESCRIPTION OF CATEGORY-->
+                <p class="description">These data represent areas over which indigenous peoples or local communities
+                    have rights over land and/or certain resources. Data such as forest management units and indigenous
+                    reserves can be found here.</p>
+                <!--URL TO QUERY DATA HERE-->
+                <a class="btn dark medium" href="/datasets?q=infrastructure">Explore</a>
+            </div>
+        </div>
     </div>
-  </div>
-  </div>
-  </div>
-  <!-- ROW APPS -->
-  <div class="row-apps">
-      <h2>FIND DATASETS BY CATEGORY</h2>
-      <div class="row">
-        <div class="col col3">
-            <h3>Forest Management</h3>
-            <p class="description">These data indicate change within forests at different resolutions, frequencies, and geographic extents. The UMD/Google tree cover loss and gain data, near real-time forest alerts, and active fire data can be found here.</p>
-            <a class="btn dark medium" href="/datasets?q=forest_change">Explore</a>
-        </div>
-        <div class="col col3">
-            <h3>Conservation</h3>
-            <p class="description">These data represent types of forest cover at different resolutions and geographic extents. Forest types such as mangroves, Intact Forest Landscapes, primary forests, and carbon stocks can be found here.</p>
-            <a class="btn dark medium" href="/datasets?q=conservation">Explore</a>
-        </div>
-        <div class="col col3">
-            <h3>Agro Industry</h3>
-            <p class="description">These data represent ways humans use forests, such as allocating forests for agricultural concessions or infrastructure development.</p>
-            <a class="btn dark medium" href="/datasets?q=agro_industry">Explore</a>
-        </div>
+    <!--
+    END - EXPLORE DATA SETS BY CATEGORY SECTION
+    -->
+
     </div>
-    <div class="row">
-        <div class="col col3">
-            <h3>Oil & Gas</h3>
-            <p class="description">These data represent forest conservation and preservation efforts, as well as areas that are important to biodiversity and natural resources.</p>
-            <a class="btn dark medium" href="/datasets?q=oil_gas">Explore</a>
-        </div>
-        <div class="col col3">
-            <h3>Administrative units</h3>
-            <p class="description">These data represent areas over which indigenous peoples or local communities have rights over land and/or certain resources. Data such as forest management units and indigenous reserves can be found here.</p>
-            <a class="btn dark medium" href="/datasets?q=administrative_units">Explore</a>
-        </div>
-        <div class="col col3">
-            <h3>Infrastructure</h3>
-            <p class="description">These data represent areas over which indigenous peoples or local communities have rights over land and/or certain resources. Data such as forest management units and indigenous reserves can be found here.</p>
-            <a class="btn dark medium" href="/datasets?q=infrastructure">Explore</a>
-        </div>
-    </div>
-    </div>
-  </div>
 </section>
+
+<!--
+** EXPLORE DATA SETS BY PUBLICATIONS SECTION - "Related publications"
+-->
 <section id="interestingView" class="interesting-section">
     <div class="inner">
+        <!--TITLE OF PUBLICATIONS-->
         <h2 class="section-title">Related publications</h2>
+
         <div class="row">
             <div class="col col3">
                 <div class="card">
+                    <!--HEADER OF PUBLICATIONS-->
                     <header>
                         <h2>Posters</h2>
                     </header>
                     <div class="content">
-                        <p>Are we missing important data?  We are always excited to work with new data providers, so let us know!</p>
+
+                        <!--DESCRIPTION OF PUBLICATION-->
+                        <p>Are we missing important data? We are always excited to work with new data providers, so let
+                            us know!</p>
                     </div>
                     <footer>
+                        <!--URL TO QUERY DATA HERE-->
                         <a href="/datasets?q=poster" class="btn dark medium">Explore</a>
                     </footer>
                 </div>
             </div>
             <div class="col col3">
                 <div class="card">
+                    <!--HEADER OF PUBLICATIONS-->
                     <header>
                         <h2>Reports</h2>
                     </header>
                     <div class="content">
-                        <p>Read conversations about forest change data, learn about interesting applications of GFW, and view other data-related questions.</p>
+
+                        <!--DESCRIPTION OF PUBLICATION-->
+                        <p>Read conversations about forest change data, learn about interesting applications of GFW, and
+                            view other data-related questions.</p>
                     </div>
                     <footer>
+                        <!--URL TO QUERY DATA HERE-->
                         <a href="/datasets?q=report" class="btn dark medium">Explore</a>
                     </footer>
                 </div>
             </div>
             <div class="col col3">
                 <div class="card">
+                    <!--HEADER OF PUBLICATIONS-->
                     <header>
                         <h2>Databases</h2>
                     </header>
                     <div class="content">
+
+                        <!--DESCRIPTION OF PUBLICATION-->
                         <p>Add a story to the GFW Interactive Map.</p>
                     </div>
                     <footer>
+                        <!--URL TO QUERY DATA HERE-->
                         <a href="/datasets?q=database" class="btn dark medium">Explore</a>
                     </footer>
                 </div>
@@ -126,83 +186,159 @@
         </div>
     </div>
 </section>
+
+<!--
+END - EXPLORE DATA SETS BY PUBLICATIONS SECTION - "Related publications"
+-->
+
+<!--
+** ABOUT THE ATLAS
+-->
+
 <div class="sup-footer">
     <div class="inner-sup-footer">
+        <!--
+        ** ABOUT
+        -->
         <section id="about" class="about container content-section">
             <div class="row">
+                <!--TITLE OF ABOUT-->
                 <h2 id="AboutTitle">About the Atlas</h2>
-                <p id="AboutText1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula nibh sit amet fermentum consectetur. Pellentesque ullamcorper leo urna, sed maximus justo pulvinar sit amet. Sed euismod a orci a vestibulum. Nulla aliquam elit elit, in rutrum ex convallis sed. Praesent pulvinar pulvinar nunc, eget posuere massa venenatis non. Curabitur dapibus nunc sit amet nibh convallis, vel eleifend turpis tempor. Integer vel aliquet odio. Vivamus a justo in dolor porta mattis. Vivamus nec eros quis erat viverra facilisis ut ut mi. Morbi eleifend dolor laoreet finibus interdum. Nam accumsan aliquet ante ac commodo. Proin dictum tincidunt lacus vitae viverra. Donec condimentum hendrerit bibendum. Proin finibus mauris vel velit commodo viverra. Suspendisse lobortis id odio sit amet varius.</p>
-                <p id="AboutText2">Pellentesque quis risus imperdiet, porta odio id, iaculis purus. Nam bibendum varius erat. Sed vitae velit mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eget enim magna. Sed consectetur pellentesque porta. Maecenas id nisi vitae nisl pharetra feugiat vitae ut lacus. Sed faucibus augue sit amet leo euismod maximus.</p>
+
+                <!--DESCRIPTION OF ABOUT-->
+                <p id="AboutText1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula nibh sit amet
+                    fermentum consectetur. Pellentesque ullamcorper leo urna, sed maximus justo pulvinar sit amet. Sed
+                    euismod a orci a vestibulum. Nulla aliquam elit elit, in rutrum ex convallis sed. Praesent pulvinar
+                    pulvinar nunc, eget posuere massa venenatis non. Curabitur dapibus nunc sit amet nibh convallis, vel
+                    eleifend turpis tempor. Integer vel aliquet odio. Vivamus a justo in dolor porta mattis. Vivamus nec
+                    eros quis erat viverra facilisis ut ut mi. Morbi eleifend dolor laoreet finibus interdum. Nam
+                    accumsan aliquet ante ac commodo. Proin dictum tincidunt lacus vitae viverra. Donec condimentum
+                    hendrerit bibendum. Proin finibus mauris vel velit commodo viverra. Suspendisse lobortis id odio sit
+                    amet varius.</p>
+
+                <p id="AboutText2">Pellentesque quis risus imperdiet, porta odio id, iaculis purus. Nam bibendum varius
+                    erat. Sed vitae velit mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi eget
+                    enim magna. Sed consectetur pellentesque porta. Maecenas id nisi vitae nisl pharetra feugiat vitae
+                    ut lacus. Sed faucibus augue sit amet leo euismod maximus.</p>
+                <!--END - DESCRIPTION OF ABOUT-->
             </div>
             <hr noshade="">
         </section>
+        <!--
+        END - ABOUT
+        -->
+
+        <!--
+        ** A PARTNERSHIP BETWEEN
+        -->
         <section id="partners-sponsors" class="container content-section">
+
+            <!--HEADER TEXT HERE FOR PARTNERSHIP SECTION-->
             <h4 class="text-left">A partnership between</h4>
+
             <div class="row">
                 <div class="col-xs-6 col-md-4 col-lg-3">
+                    <!--IMAGE URL LINK-->
                     <a href="http://www.minfof.cm/" target="_blank">
-                        <img src="http://cmr.forest-atlas.org/img/logo/mifw-logo.png" alt="MIFW Logo" class="img-responsive">
+                        <!--IMAGE URL PATH-->
+                        <img src="http://cmr.forest-atlas.org/img/logo/mifw-logo.png" alt="MIFW Logo"
+                             class="img-responsive">
                     </a>
                 </div>
                 <div class="col-xs-6 col-md-4 col-lg-3">
+                    <!--IMAGE URL LINK-->
                     <a href="http://www.wri.org/" target="_blank">
-                        <img src="http://cmr.forest-atlas.org/img/logo/wri-logo.png" alt="World Resources Institute" class="img-responsive">
+                        <!--IMAGE URL PATH-->
+                        <img src="http://cmr.forest-atlas.org/img/logo/wri-logo.png" alt="World Resources Institute"
+                             class="img-responsive">
                     </a>
                 </div>
             </div>
             <br>
+
+            <!--
+            END - A PARTNERSHIP BETWEEN
+            -->
+
+            <!--
+            ** SUPPORT BY
+            -->
+            <!--HEADER TEXT HERE FOR SUPPORT BY SECTION-->
             <h4 class="text-left">Supported by</h4>
+
             <div class="row">
                 <div class="col-xs-4 col-lg-2 supporter">
+                    <!--IMAGE URL LINK-->
                     <a href="http://globalforestwatch.org/" target="_blank">
-                        <img src="http://cmr.forest-atlas.org/img/logo/gfw-logo-bw.png" onmouseover="this.src='http://cmr.forest-atlas.org/img/logo/gfw-logo.png'" onmouseout="this.src='http://cmr.forest-atlas.org/img/logo/gfw-logo-bw.png'" alt="GFW" class="img-responsive">
+                        <!--IMAGE URL PATH FOR THE BLACK AND WHITE IMAGE-->
+                        <img src="http://cmr.forest-atlas.org/img/logo/gfw-logo-bw.png"
+                             onmouseover="this.src='http://cmr.forest-atlas.org/img/logo/gfw-logo.png'"
+                             onmouseout="this.src='http://cmr.forest-atlas.org/img/logo/gfw-logo-bw.png'" alt="GFW"
+                             class="img-responsive">
                     </a>
                 </div>
                 <div class="col-xs-4 col-lg-2 supporter">
+                    <!--IMAGE URL LINK-->
                     <a href="http://www.usaid.gov/" target="_blank">
-                        <img src="http://cmr.forest-atlas.org/img/logo/usaid-logo-bw.png" onmouseover="this.src='http://cmr.forest-atlas.org/img/logo/usaid-logo.png'" onmouseout="this.src='http://cmr.forest-atlas.org/img/logo/usaid-logo-bw.png'" alt="USAID" class="img-responsive">
+                        <!--IMAGE URL PATH FOR THE BLACK AND WHITE IMAGE-->
+                        <img src="http://cmr.forest-atlas.org/img/logo/usaid-logo-bw.png"
+                             onmouseover="this.src='http://cmr.forest-atlas.org/img/logo/usaid-logo.png'"
+                             onmouseout="this.src='http://cmr.forest-atlas.org/img/logo/usaid-logo-bw.png'" alt="USAID"
+                             class="img-responsive">
                     </a>
                 </div>
                 <div class="col-xs-4 col-lg-2 supporter">
-                    <a href="https://www.gov.uk/government/organisations/department-for-international-development" target="_blank">
-                        <img src="http://cmr.forest-atlas.org/img/logo/ukaid-logo-bw.png" onmouseover="this.src='http://cmr.forest-atlas.org/img/logo/ukaid-logo.png'" onmouseout="this.src='http://cmr.forest-atlas.org/img/logo/ukaid-logo-bw.png'"alt="UKAID" class="img-responsive">
+                    <!--IMAGE URL LINK-->
+                    <a href="https://www.gov.uk/government/organisations/department-for-international-development"
+                       target="_blank">
+                        <!--IMAGE URL PATH FOR THE BLACK AND WHITE IMAGE-->
+                        <img src="http://cmr.forest-atlas.org/img/logo/ukaid-logo-bw.png"
+                             onmouseover="this.src='http://cmr.forest-atlas.org/img/logo/ukaid-logo.png'"
+                             onmouseout="this.src='http://cmr.forest-atlas.org/img/logo/ukaid-logo-bw.png'" alt="UKAID"
+                             class="img-responsive">
                     </a>
                 </div>
                 <div class="col-xs-4 col-lg-2 supporter">
+                    <!--IMAGE URL LINK-->
                     <a href="https://www.regjeringen.no/en/dep/kld/id668/" target="_blank">
-                        <img src="http://cmr.forest-atlas.org/img/logo/nmce-logo-bw.png" onmouseover="this.src='http://cmr.forest-atlas.org/img/logo/nmce-logo.png'" onmouseout="this.src='http://cmr.forest-atlas.org/img/logo/nmce-logo-bw.png'"alt="Norway Ministry of the Environment" class="img-responsive">
+                        <!--IMAGE URL PATH FOR THE BLACK AND WHITE IMAGE-->
+                        <img src="http://cmr.forest-atlas.org/img/logo/nmce-logo-bw.png"
+                             onmouseover="this.src='http://cmr.forest-atlas.org/img/logo/nmce-logo.png'"
+                             onmouseout="this.src='http://cmr.forest-atlas.org/img/logo/nmce-logo-bw.png'"
+                             alt="Norway Ministry of the Environment" class="img-responsive">
                     </a>
                 </div>
                 <div class="col-xs-4 col-lg-2 supporter">
+                    <!--IMAGE URL LINK-->
                     <a href="http://www.hexagongeospatial.com/" target="_blank">
-                        <img src="http://cmr.forest-atlas.org/img/logo/hexagon-logo-bw.png" onmouseover="this.src='http://cmr.forest-atlas.org/img/logo/hexagon-logo.png'" onmouseout="this.src='http://cmr.forest-atlas.org/img/logo/hexagon-logo-bw.png'"alt="Hexagon Geospatial" class="img-responsive">
+                        <!--IMAGE URL PATH FOR THE BLACK AND WHITE IMAGE-->
+                        <img src="http://cmr.forest-atlas.org/img/logo/hexagon-logo-bw.png"
+                             onmouseover="this.src='http://cmr.forest-atlas.org/img/logo/hexagon-logo.png'"
+                             onmouseout="this.src='http://cmr.forest-atlas.org/img/logo/hexagon-logo-bw.png'"
+                             alt="Hexagon Geospatial" class="img-responsive">
                     </a>
                 </div>
                 <div class="col-xs-4 col-lg-2 supporter">
+                    <!--IMAGE URL LINK-->
                     <a href="http://www.esri.com/" target="_blank">
-                        <img src="http://cmr.forest-atlas.org/img/logo/esri-logo-bw.png" onmouseover="this.src='http://cmr.forest-atlas.org/img/logo/esri-logo.png'" onmouseout="this.src='http://cmr.forest-atlas.org/img/logo/esri-logo-bw.png'" alt="ESRI" class="img-responsive">
+                        <!--IMAGE URL PATH FOR THE BLACK AND WHITE IMAGE-->
+                        <img src="http://cmr.forest-atlas.org/img/logo/esri-logo-bw.png"
+                             onmouseover="this.src='http://cmr.forest-atlas.org/img/logo/esri-logo.png'"
+                             onmouseout="this.src='http://cmr.forest-atlas.org/img/logo/esri-logo-bw.png'" alt="ESRI"
+                             class="img-responsive">
                     </a>
                 </div>
             </div>
+
+            <!--
+            END - SUPPORT BY
+            -->
             <br>
             <hr noshade>
         </section>
-        <!--<div class="social">-->
-            <!--<h4>Spread the word.<span class="bold"> Share Global Forest Watch.</span></h4>-->
-            <!--<div class="share_buttons">-->
-              <!--<div id="fb-root"></div>-->
-              <!--<a href="http://twitter.com/share" target="_blank" class="twitter-share-button" data-url="http://www.globalforestwatch.org/" data-text="Global Forest Watch">Tweet</a>-->
-              <!--<div class="g-plusone" data-size="medium" data-href="http://www.globalforestwatch.org/"></div>-->
-              <!--<div class="fb-like" data-href="http://www.globalforestwatch.org/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="updates">-->
-            <!--<h4>Sign up to <span class="bold">receive updates.</span></h4>-->
-            <!--<ul>-->
-                <!--<li><a target="_blank" href="http://www.wri.org/global-forest-watch-stay-informed"><svg><use xlink:href="#shape-mail"></use></svg></a></li>-->
-                <!--<li><a target="_blank" href="https://twitter.com/globalforests"><svg><use xlink:href="#shape-twitter"></use></svg></a></li>-->
-                <!--<li><a target="_blank" href="http://instagram.com/globalforests"><svg><use xlink:href="#shape-instagram"></use></svg></a></li>-->
-            <!--</ul>-->
-        <!--</div>-->
     </div>
 </div>
+
+<!--
+END - ABOUT THE ATLAS
+-->
