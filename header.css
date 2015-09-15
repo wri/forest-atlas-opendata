@@ -46,7 +46,7 @@ body {
     /*position: absolute;*/
     /*right: 25px;*/
     /*top: -12px;*/
-    /*display: none;*/
+    display: none;
 }
 
 .showGoogleTranslateButton{

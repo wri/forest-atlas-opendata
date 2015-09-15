@@ -10,9 +10,25 @@ END - FOOTER SECTION
 <!--
 ** SCRIPTS GO HERE
 -->
-<script>
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+    $( window ).load(function() {
+        <!-- Choose the language to auto-translate on window load -->
+        var lang = "French";
+        var $frame = $('.goog-te-menu-frame:first');
+        if (!$frame.size()) {
+            alert("Error: Could not find Google translate frame.");
+            return false;
+        }
+        $frame.contents().find('.goog-te-menu2-item span.text:contains('+lang+')').get(0).click();
+        return false;
+    });
 
 </script>
+
+
+
 <!--
 END - SCRIPTS GO HERE
 -->
